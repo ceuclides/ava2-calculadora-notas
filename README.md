@@ -1,5 +1,9 @@
 # Calculadora de Notas
 
+## Site publicado
+
+https://ceuclides.github.io/ava2-calculadora-notas/
+
 ## Descrição
 
 Projeto acadêmico de Front-End desenvolvido para demonstrar conceitos básicos de HTML5, CSS3 e TypeScript. O site apresenta uma Home, uma tela de login demonstrativa e uma calculadora de média acadêmica.
