@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - Calculadora de Notas</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="cabecalho">
+    <div class="container cabecalho-conteudo">
+      <a class="identificacao" href="index.html" aria-label="Página inicial">
+        <img class="logo" src="img/logo.jpeg" alt="Logo Calculadora de Notas">
+        <span>Calculadora de Notas</span>
+      </a>
+
+      <nav class="menu" aria-label="Navegação principal">
+        <a class="menu-link" href="index.html">Início</a>
+        <a class="menu-link ativo" href="login.html">Calculadora</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="conteudo">
+    <section class="card formulario-card" aria-labelledby="titulo-login">
+      <h1 id="titulo-login">Área de Login</h1>
+
+      <form id="formulario-login" novalidate>
+        <div class="campo">
+          <label for="usuario">Usuário</label>
+          <input id="usuario" name="usuario" type="text" autocomplete="username" placeholder="Digite o usuário">
+        </div>
+
+        <div class="campo">
+          <label for="senha">Senha</label>
+          <input id="senha" name="senha" type="password" autocomplete="current-password" placeholder="Digite a senha">
+        </div>
+
+        <div class="botoes-acoes">
+          <button id="botao-entrar" class="botao botao-destaque" type="submit">ENTRAR</button>
+          <button id="botao-limpar" class="botao botao-secundario" type="button">LIMPAR</button>
+        </div>
+      </form>
+
+      <p id="mensagem-login" class="mensagem" role="status" aria-live="polite"></p>
+      <p id="tentativas-login" class="tentativas">Tentativas disponíveis: 3</p>
+
+      <a class="link-voltar" href="index.html">Voltar para a Home</a>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <div class="container">
+      <p>TQDC© -  2026</p>
+      <p>Desenvolvimento Front-End: Carlos Euclides de Souza</p>
+      <p>Cocriação: Iolanda Almeida</p>
+          
+    </div>
+  </footer>
+
+  <script src="js/login.js"></script>
+
+</body>
+</html>

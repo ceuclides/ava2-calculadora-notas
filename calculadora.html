@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora de Notas</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="cabecalho">
+    <div class="container cabecalho-conteudo">
+      <a class="identificacao" href="index.html" aria-label="Página inicial">
+        <img class="logo" src="img/logo.jpeg" alt="Logo Calculadora de Notas">
+        <span>Calculadora de Notas</span>
+      </a>
+
+      <nav class="menu" aria-label="Navegação principal">
+        <a class="menu-link" href="index.html">Início</a>
+        <a class="menu-link ativo" href="calculadora.html">Calculadora</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="conteudo calculadora-conteudo">
+    <section class="card calculadora-card" aria-labelledby="titulo-calculadora">
+      <div class="calculadora-cabecalho">
+        <div>
+          <p class="rotulo">Área do aluno</p>
+          <h1 id="titulo-calculadora">Calculadora de Médias</h1>
+        </div>
+        <div class="dados-usuario">
+          <img id="foto-usuario" class="foto-usuario" src="" alt="Foto do usuário">
+          <p id="nome-usuario" class="nome-usuario"></p>
+          <p id="data-hora" class="data-hora"></p>
+        </div>
+      </div>
+
+      <form id="formulario-calculadora" novalidate>
+        <div class="campo">
+          <label for="nome-aluno">Nome do Aluno</label>
+          <input id="nome-aluno" type="text" placeholder="Digite o nome do aluno">
+        </div>
+
+        <div class="campos-notas">
+          <div class="campo">
+            <label for="primeira-nota">Primeira Nota</label>
+            <input id="primeira-nota" type="number" min="0" max="10" step="0.01" placeholder="0 a 10">
+          </div>
+
+          <div class="campo">
+            <label for="segunda-nota">Segunda Nota</label>
+            <input id="segunda-nota" type="number" min="0" max="10" step="0.01" placeholder="0 a 10">
+          </div>
+        </div>
+
+        <div class="botoes-calculadora">
+          <button id="botao-calcular" class="botao botao-destaque" type="button">CALCULAR MÉDIA</button>
+          <button id="botao-situacao" class="botao botao-azul" type="button">VERIFICAR SITUAÇÃO</button>
+          <button id="botao-limpar" class="botao botao-secundario" type="button">LIMPAR</button>
+        </div>
+      </form>
+
+      <section class="area-resultado" aria-label="Resultado da média">
+        <p id="mensagem-calculadora" class="mensagem" role="status" aria-live="polite"></p>
+        <p><strong>Nome do aluno:</strong> <span id="resultado-nome">-</span></p>
+        <p><strong>Média obtida:</strong> <span id="resultado-media">-</span></p>
+        <p><strong>Situação acadêmica:</strong> <span id="resultado-situacao">-</span></p>
+      </section>
+
+      <button id="botao-sair" class="botao botao-sair" type="button">SAIR</button>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <div class="container">
+      <p>TQDC© -  2026</p>
+      <p>Desenvolvimento Front-End: Carlos Euclides de Souza</p> 
+      <p>Cocriação: Iolanda Almeida</p>
+          
+    </div>
+  </footer>
+
+  <script src="js/calculadora.js"></script>
+</body>
+</html>
